@@ -1,17 +1,17 @@
-# Download-simulator
+# Python Download Simulator
 
 This Python script simulates a file download with a user-defined download speed and file size. It provides a simple command-line interface to set the download speed and then simulate downloading a file, showing a progress update in the terminal.
 
 ## Features
 
-* **Set Download Speed:** Allows the user to specify the simulated download speed in Mbps.
-* **Simulate Download:** Enables the user to enter the size of a file (in MB) to download and simulates the download process based on the set speed.
+* **Set Download Speed:** Allows the user to specify the simulated download speed in various units: Bps, Kbps, Mbps, Gbps, Tbps, Pbps.
+* **Simulate Download:** Enables the user to enter the size of a file (in MB) to download and simulates the download process based on the set speed, with slight random fluctuations for realism.
 * **Progress Display:** Shows a dynamic progress update in the terminal during the simulated download, indicating the amount downloaded and the percentage complete.
 * **Estimated Time:** Displays the total time taken for the simulated download to complete.
 
 ## How to Use
 
-1.  **Save the script:** Save the Python code as a `.py` file (e.g., `download_simulator.py`).
+1.  **Save the script:** Save the Python code (provided in the previous response) as a `.py` file (e.g., `download_simulator.py`).
 
 2.  **Open a terminal or command prompt:** Navigate to the directory where you saved the file.
 
@@ -23,15 +23,15 @@ This Python script simulates a file download with a user-defined download speed 
 4.  **Follow the menu:** The script will present a menu with the following options:
     ```
     Download Simulator Menu:
-    1. Set Download Speed
-    2. Download and Select Size
+    1. Set Download Speed (Bps, Kbps, Mbps, Gbps, Tbps, Pbps)
+    2. Download and Select Size (MB)
     3. Exit
     ```
 
     * **Option 1: Set Download Speed**
         * Enter `1` and press Enter.
-        * You will be prompted to enter the desired download speed in Mbps (megabits per second).
-        * Enter a positive numerical value and press Enter. The script will confirm the set speed.
+        * You will be prompted to enter the desired download speed along with its unit (e.g., `10 Mbps`, `1024 Kbps`, `1 Bps`, `0.5 Gbps`, etc.).
+        * Enter a valid numerical value and unit, then press Enter. The script will confirm the set speed.
 
     * **Option 2: Download and Select Size**
         * Ensure you have set the download speed first. If not, choose option 1.
@@ -54,5 +54,4 @@ coolgaming-2011 (MrKaminK11)
 
 ## License
 
-This script is licensed by MIT License
-see [LICENSE](LICENSE) For details
+This program was licensed by MIT license, see [LICENSE](LICENSE) for details :)
