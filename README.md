@@ -1,57 +1,57 @@
 # Python Download Simulator
 
-This Python script simulates a file download with a user-defined download speed and file size. It provides a simple command-line interface to set the download speed and then simulate downloading a file, showing a progress update in the terminal.
+This Python script simulates a file download with a user-defined download speed and file size. It provides a simple command-line interface to set the download speed (in Bps, Kbps, Mbps, Gbps, Tbps, or Pbps) and then simulate downloading a file (specifying the size in B, Kb, Mb, Gb, Tb, or Pb), showing a progress update in the terminal with slight random speed fluctuations for a more realistic simulation.
 
 ## Features
 
-* **Set Download Speed:** Allows the user to specify the simulated download speed in various units: Bps, Kbps, Mbps, Gbps, Tbps, Pbps.
-* **Simulate Download:** Enables the user to enter the size of a file (in MB) to download and simulates the download process based on the set speed, with slight random fluctuations for realism.
-* **Progress Display:** Shows a dynamic progress update in the terminal during the simulated download, indicating the amount downloaded and the percentage complete.
+* **Set Download Speed:** Allows the user to specify the simulated download speed using various units (Bps, Kbps, Mbps, Gbps, Tbps, Pbps).
+* **Select Download Size:** Enables the user to enter the size of a file to download using various units (B, Kb, Mb, Gb, Tb, Pb).
+* **Simulate Download:** Simulates the download process based on the set speed and selected size, with minor random variations in speed.
+* **Progress Display:** Shows a dynamic progress update in the terminal during the simulated download, indicating the amount downloaded and the percentage complete (displayed in MB for readability).
 * **Estimated Time:** Displays the total time taken for the simulated download to complete.
 
 ## How to Use
 
-1.  **Save the script:** Save the Python code (provided in the previous response) as a `.py` file (e.g., `download_simulator.py`).
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/KhalidYT11/Download-simulator/](https://github.com/KhalidYT11/Download-simulator/)
+    cd Download-simulator
+    ```
 
-2.  **Open a terminal or command prompt:** Navigate to the directory where you saved the file.
-
-3.  **Run the script:** Execute the script using the Python interpreter:
+2.  **Run the script:** Execute the Python script using the Python interpreter:
     ```bash
     python download_simulator.py
     ```
 
-4.  **Follow the menu:** The script will present a menu with the following options:
+3.  **Follow the menu:** The script will present a menu with the following options:
     ```
     Download Simulator Menu:
     1. Set Download Speed (Bps, Kbps, Mbps, Gbps, Tbps, Pbps)
-    2. Download and Select Size (MB)
-    3. Exit
+    2. Select Download Size (B, Kb, Mb, Gb, Tb, Pb)
+    3. Simulate Download
+    4. Exit
     ```
 
     * **Option 1: Set Download Speed**
         * Enter `1` and press Enter.
-        * You will be prompted to enter the desired download speed along with its unit (e.g., `10 Mbps`, `1024 Kbps`, `1 Bps`, `0.5 Gbps`, etc.).
-        * Enter a valid numerical value and unit, then press Enter. The script will confirm the set speed.
+        * You will be prompted to enter the desired download speed (e.g., `10 Mbps`, `1024 Kbps`, `1 Bps`, `0.5 Gbps`).
+        * Enter a positive numerical value followed by the unit (Bps, Kbps, Mbps, Gbps, Tbps, Pbps) and press Enter. The script will confirm the set speed.
 
-    * **Option 2: Download and Select Size**
-        * Ensure you have set the download speed first. If not, choose option 1.
+    * **Option 2: Select Download Size**
         * Enter `2` and press Enter.
-        * You will be prompted to enter the file size to download in MB (megabytes).
-        * Enter a positive numerical value and press Enter.
-        * The script will begin simulating the download process, showing the progress in the terminal.
-        * Once the simulation is complete, it will display the total download time.
+        * You will be prompted to enter the file size to download (e.g., `500 Mb`, `1024 Kb`, `1 Gb`).
+        * Enter a positive numerical value followed by the unit (B, Kb, Mb, Gb, Tb, Pb) and press Enter. The script will confirm the selected size.
 
-    * **Option 3: Exit**
-        * Enter `3` and press Enter to close the simulator.
+    * **Option 3: Simulate Download**
+        * Enter `3` and press Enter to start the download simulation using the previously set speed and size.
+
+    * **Option 4: Exit**
+        * Enter `4` and press Enter to close the simulator.
 
 ## Requirements
 
 * **Python 3.x:** This script is written in Python 3 and requires a Python 3 interpreter to run.
 
-## Author
-
-coolgaming-2011 (MrKaminK11)
-
 ## License
 
-This program was licensed by MIT license, see [LICENSE](LICENSE) for details :)
+This program was licensed by the [MIT License](LICENSE), see `LICENSE` for details :)
